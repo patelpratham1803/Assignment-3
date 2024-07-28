@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smoothie Machine</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="image-side"></div>
+        <div class="form-side">
+            <h1>Order Your Smoothie</h1>
+            <form id="smoothie-form">
+                <label for="base">Base:</label>
+                <select id="base" name="base" required>
+                    <option value="milk">Milk</option>
+                    <option value="yogurt">Yogurt</option>
+                    <option value="juice">Juice</option>
+                </select>
+                <label for="fruits">Fruits:</label>
+                <select id="fruits" name="fruits" multiple required>
+                    <option value="banana">Banana</option>
+                    <option value="strawberry">Strawberry</option>
+                    <option value="blueberry">Blueberry</option>
+                    <option value="mango">Mango</option>
+                    <option value="apple">Apple</option>
+                </select>
+                <label for="addOns">Add-Ons:</label>
+                <select id="addOns" name="addOns" multiple>
+                    <option value="chia seeds">Chia Seeds</option>
+                    <option value="protein powder">Protein Powder</option>
+                    <option value="honey">Honey</option>
+                    <option value="spinach">Spinach</option>
+                    <option value="almonds">Almonds</option>
+                </select>
+                <label for="size">Size:</label>
+                <select id="size" name="size" required>
+                    <option value="small">Small</option>
+                    <option value="medium">Medium</option>
+                    <option value="large">Large</option>
+                </select>
+                <label for="sweetness">Sweetness:</label>
+                <input type="range" id="sweetness" name="sweetness" min="1" max="5" required>
+                <button type="button" id="order-btn">Order</button>
+            </form>
+            <div id="order-summary"></div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
